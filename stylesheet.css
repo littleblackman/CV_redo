@@ -1,39 +1,15 @@
 /* ============================ MEDIA QUERIES POUR LE RESPONSIVE WEB DEVELOPMENT =========================== */
 
 /*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 400PX =========================*/
-@media (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 400px) {
     body {
         font-size: 0.7rem;
-        margin: 0.5em 0.5em;
+        margin: 0.5% 0.5%;
+        padding: 0.3% 0.3%;
       }
 
     .container {
       width: 90%;
-    }
-  }
-
-/*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 500PX =========================*/  
-@media (max-width: 500px) {
-    body {
-        font-size: 0.7rem;
-        margin: 0.5em 0.5em;
-      }
-
-    .container {
-      width: 90%;
-    }
-  }
-  /*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 800PX =========================*/
-@media (max-width: 800px) {
-    body {
-      font-size: 0.7rem;
-      margin: 0.5% 1%;
-    }
-
-    .container {
-        width: 90%;
-        padding: 1% 1%;
-        flex-flow: column wrap;
     }
 
     .col1-1 {
@@ -69,7 +45,7 @@
     }
 
     i {
-        display: none;
+        display: none !important;
     }
 
     .col4-1 {
@@ -77,10 +53,126 @@
     }
 
   p {
-      margin-left: 0px;
+      margin-left: 0%;
   }
+}
 
 
+/*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 500PX =========================*/  
+@media (min-width: 400.1px) and (max-width: 500px) {
+    body {
+        font-size: 0.7rem;
+        margin: 0.5% 0.5%;
+      }
+
+    .container {
+      width: 90%;
+      margin: 0.5% 0.5%;
+      padding: 0.3% 0.3%
+    }
+
+    .col1-1 {
+        display: none !important;
+    }
+
+    .col1-2 {
+        flex: 1 1 100%;
+    }
+
+    .col2-1 {
+        flex: 1 1 100%;
+    }
+
+    .col2-2 {
+        flex: 1 1 100%;
+    }
+
+    .col3-1 {
+        flex: 1 1 100%;
+    }
+
+    .col3-2 {
+        flex: 1 1 100%;
+    }
+
+    .col4-1 {
+        flex: 1 1 100%;
+    }
+
+    .col4-2 {
+        flex: 1 1 100%;
+    }
+
+    i {
+        display: none !important;
+    }
+
+    .col4-1 {
+        display: none;
+    }
+
+  p {
+      margin-left: 0%;
+  }
+}
+
+  /*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 800PX =========================*/
+@media (min-width: 500.1px) and (max-width: 800px) {
+    body {
+      font-size: 0.7rem;
+      margin: 0.5% 1%;
+      padding: 0.5% 0.5%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 1% 1%;
+        flex-flow: column wrap;
+    }
+
+    .col1-2 {
+        flex: 1 1 100%;
+    }
+
+    .col2-1 {
+        flex: 1 1 100%;
+    }
+
+    .col2-2 {
+        flex: 1 1 100%;
+    }
+
+    .col3-1 {
+        flex: 1 1 100%;
+    }
+
+    .col3-2 {
+        flex: 1 1 100%;
+    }
+
+    .col4-1 {
+        flex: 1 1 100%;
+    }
+
+    .col4-2 {
+        flex: 1 1 100%;
+    }
+
+    i {
+        display: none !important;
+    }
+
+    .col4-1 {
+        display: none;
+    }
+
+    p {
+      margin-left: 0%;
+    }
+
+    .col1-2 h1 {
+      margin: 1% 0% 0% 1%;
+    }
 }
 
 
@@ -165,8 +257,7 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
 
 .col1-2 h1      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
     {
-        margin-left: 10%;
-        margin-top: 12.5%;
+        margin: 12.5% 0% 0% 10%;
     }
 
 .col1-2 h2      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
