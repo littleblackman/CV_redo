@@ -1,0 +1,344 @@
+/* ============================ MEDIA QUERIES POUR LE RESPONSIVE WEB DEVELOPMENT =========================== */
+
+/* Sur des écrans de moins de 800px, modifie les marges */
+@media (max-width: 400px) {
+    body {
+        font-size: 0.7rem;
+        margin: 0.5em 0.5em;
+      }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.7rem;
+        margin: 0.5em 0.5em;
+      }
+    .container {
+      width: 100%;
+      display: block;
+      flex-direction: row;
+    }
+  }
+  /* Sur des écrans de moins de 800px, modifie les marges, enlève la section photo et loisirs */
+@media (max-width: 800px) {
+    body {
+      font-size: 0.7rem;
+      margin: 0.6em 0.6em;
+    }
+    .container {
+        width: 80%;
+        padding: 5px 5px;
+        flex-flow: column wrap;
+    }
+    .col1-1 {
+        display: none !important;
+    }
+    i {
+        display: none;
+    }
+    .col4-1 {
+        display: none;
+    }
+  p {
+      margin-left: 0px;
+  }
+}
+
+
+/* ============================= Mise en forme générale de la page ================================= */
+body
+    {
+        height: 100vh;
+        width: 100%;
+    }
+
+.container      /* Mise en display flex direction colonnes, padding de chaque côté, break-word pour les césures */
+    {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        word-break: break-all;
+        font-size: 1rem;
+        margin: 1em 3em;
+        padding: 1em 3em;
+    }
+
+h1      /* Petit changement taille de police h1 */
+    {
+        font-size: 1.8rem;
+    }
+
+h3      /* donne aux titres h3 (ceux de gauche) une bande noire, couleur de la typo bleue & taille responsive + typo centrée */
+    {
+        color: #64B5F6;
+        font-size: 1.5rem;
+        background-color: black;
+        text-align: center;
+    }
+
+.paul       /* un petit <span> qui sert à colorier mon prénom */
+    {
+        color: #64B5F6;
+    }
+
+.develo     /* sert à souligner le "develo" */
+    {
+        border-bottom: 1px solid #64B5F6; 
+    }
+
+h4      /* titres h4 de droite, souligner en bleu + petites modifs */
+    {
+        color: black;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.3rem;
+        border-bottom: 2px solid #64B5F6;
+        padding-bottom: 0.5em;
+        margin-left: 3em;
+    }
+
+h4 i        /*sert à écarter les icones des titres h4 */
+    {
+        position: relative;
+        right: 1em;
+    }
+
+.fa-star        /* Changement de couleur de l'icone étoile */
+    {
+        color: #64B5F6;
+    }
+
+/* ============================= Mise en forme de la 1ère rangée ================================= */
+
+.columnOne      /* Mise en forme flex de la 1ère rangée */    
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+.col1-1     /* Background et largeur de la partie photo */
+    {
+        display: flex;
+        background-color: #64B5F6;
+        flex: 1 1 30%;
+    }
+
+.col1-2     /* Alignement du texte et largeur de la partie Nom + Titre */
+    {
+        flex: 1 1 70%;
+        text-align: left;
+    }
+
+.col1-2 h1      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
+    {
+        margin-left: 2em;
+        margin-top: 2.5em;
+    }
+
+.col1-2 h2      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
+    {
+        margin-left: 2.4em;
+    }
+
+.DP     /* Mise en forme de la photo avec border-radius pour la forme ronde et box-shadow pour l'ombre exterieure */
+    {
+        transform: scale(0.5);
+        border-radius: 100%;
+        max-width: 100%;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        margin: auto;
+    }
+
+/* ============================= Mise en forme de la 2ème rangée ================================= */
+
+.columnTwo      /* Mise en forme flex de la 2ème rangée */            
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+.col2-1     /* Mise en forme largeur + couleur de fond partie Contact */
+    {
+        background-color: #64B5F6;
+        flex: 1 1 30%;
+    }
+
+.col2-1 p       /* Encore de la gruge pour le placement du texte */
+    {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+.col2-2     /* Mise en forme largeur */
+    {
+        flex: 1 1 70%;
+    }
+
+/* ============================ MISE EN FORME GRID DE LA SECTION FORMATION ========================== */
+
+.grid-formation     /* Mise en forme de la grid principale */
+    {
+        display: grid;
+        grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
+        grid-template-rows: minmax(min-content, max-content);
+    }
+
+/* MISE EN FORME GRID PARTIE OPENCLASSROOMS */
+
+.year1
+    {
+        grid-column: 2 / 3;
+    }
+
+.oc     
+    {
+        grid-column: 3 / 4;
+    }
+
+.cotonou
+    {
+        grid-column: 2 / 3;
+    }
+
+.ocsuite
+    {
+        grid-column: 3 / 4;
+    }
+
+/* MISE EN FORME GRID PARTIE MJM */
+
+.year2
+    {
+        grid-column: 2 / 3;
+    }
+
+.nantes
+    {
+        grid-column: 2 / 3;
+    }
+
+.mjm
+    {
+        grid-column: 3 / 4;
+    }
+
+.mjmsuite
+    {
+        grid-column: 3 / 4;
+    }
+
+/* ============================= Mise en forme de la 3ème rangée ================================= */
+
+.columnThree        /* Mise en forme flex de la 3ème rangée */          
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+.col3-1     /* Mise en forme largeur et bgColor partie A Propos de moi */
+    {
+        background-color: #64B5F6;
+        flex: 1 1 30%;
+    }
+
+.col3-1 p       /* Encore de la gruge pour le placement du texte */
+    {
+        margin: auto 20px;
+    }
+
+.icon       /* Placement des icones HTML5 / CSS3 */
+    {
+        text-align: center;
+    }
+
+.col3-2     /* Mise en forme largeur partie Experience Profesionnelle */
+    {
+        flex: 1 1 70%;
+    }
+
+/* ============================ MISE EN FORME GRID DE LA SECTION EXP PROFESIONNELLE ========================== */ 
+
+.grid-pro
+     {
+        display: grid;
+        grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
+        grid-template-rows: minmax(min-content, max-content);
+     }
+
+/* MISE EN FORME GRID PARTIE CANAL+ */
+
+.year3
+     {
+         grid-column: 2 / 3;
+     }
+
+.cplus
+     {
+        grid-column: 3 / 4;
+     }
+
+.cotonou2
+     {
+         grid-column: 2 / 3;
+     }
+
+.cplussuite
+     {
+         grid-column: 3 / 4;
+     }
+
+/* MISE EN FORME GRID PARTIE HOTEL DE TOIRAS */
+    
+.year4
+     {
+         grid-column : 2 / 3;
+     }
+
+.toiras
+     {
+         grid-column: 3 / 4;
+     }
+
+.stmartin
+     {
+         grid-column: 2 / 3;
+     }
+
+.toirassuite
+     {
+         grid-column: 3 / 4;
+     }
+
+/* ============================= Mise en forme de la 4ème rangée ================================= */
+
+.columnFour     /* Mise en forme flex de la 3ème rangée */     
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+.col4-1     /* Mise en forme largeur et bgColor de la partie Loisirs */
+    {
+        background-color: #64B5F6;
+        flex: 1 1 30%;
+    }
+
+.kiffe      /* Mise en forme et placement des icones Loisirs */
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+.col4-2     /* Mise en forme largeur de la partie Recommandations */
+    {
+        flex: 1 1 70%;
+        text-align: center;
+    }
+
