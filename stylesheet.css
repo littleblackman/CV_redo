@@ -1,181 +1,3 @@
-/* ============================ MEDIA QUERIES POUR LE RESPONSIVE WEB DEVELOPMENT =========================== */
-
-/*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 400PX =========================*/
-@media (min-width: 0px) and (max-width: 400px) {
-    body {
-        font-size: 0.7rem;
-        margin: 0.5% 0.5%;
-        padding: 0.3% 0.3%;
-      }
-
-    .container {
-      width: 90%;
-    }
-
-    .col1-1 {
-        display: none !important;
-    }
-
-    .col1-2 {
-        flex: 1 1 100%;
-    }
-
-    .col2-1 {
-        flex: 1 1 100%;
-    }
-
-    .col2-2 {
-        flex: 1 1 100%;
-    }
-
-    .col3-1 {
-        flex: 1 1 100%;
-    }
-
-    .col3-2 {
-        flex: 1 1 100%;
-    }
-
-    .col4-1 {
-        flex: 1 1 100%;
-    }
-
-    .col4-2 {
-        flex: 1 1 100%;
-    }
-
-    i {
-        display: none !important;
-    }
-
-    .col4-1 {
-        display: none;
-    }
-
-  p {
-      margin-left: 0%;
-  }
-}
-
-
-/*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 500PX =========================*/  
-@media (min-width: 400.1px) and (max-width: 500px) {
-    body {
-        font-size: 0.7rem;
-        margin: 0.5% 0.5%;
-      }
-
-    .container {
-      width: 90%;
-      margin: 0.5% 0.5%;
-      padding: 0.3% 0.3%
-    }
-
-    .col1-1 {
-        display: none !important;
-    }
-
-    .col1-2 {
-        flex: 1 1 100%;
-    }
-
-    .col2-1 {
-        flex: 1 1 100%;
-    }
-
-    .col2-2 {
-        flex: 1 1 100%;
-    }
-
-    .col3-1 {
-        flex: 1 1 100%;
-    }
-
-    .col3-2 {
-        flex: 1 1 100%;
-    }
-
-    .col4-1 {
-        flex: 1 1 100%;
-    }
-
-    .col4-2 {
-        flex: 1 1 100%;
-    }
-
-    i {
-        display: none !important;
-    }
-
-    .col4-1 {
-        display: none;
-    }
-
-  p {
-      margin-left: 0%;
-  }
-}
-
-  /*============================= RESPONSIVE DESIGN POUR ECRANS DE MOINS DE 800PX =========================*/
-@media (min-width: 500.1px) and (max-width: 800px) {
-    body {
-      font-size: 0.7rem;
-      margin: 0.5% 1%;
-      padding: 0.5% 0.5%;
-    }
-
-    .container {
-        width: 90%;
-        padding: 1% 1%;
-        flex-flow: column wrap;
-    }
-
-    .col1-2 {
-        flex: 1 1 100%;
-    }
-
-    .col2-1 {
-        flex: 1 1 100%;
-    }
-
-    .col2-2 {
-        flex: 1 1 100%;
-    }
-
-    .col3-1 {
-        flex: 1 1 100%;
-    }
-
-    .col3-2 {
-        flex: 1 1 100%;
-    }
-
-    .col4-1 {
-        flex: 1 1 100%;
-    }
-
-    .col4-2 {
-        flex: 1 1 100%;
-    }
-
-    i {
-        display: none !important;
-    }
-
-    .col4-1 {
-        display: none;
-    }
-
-    p {
-      margin-left: 0%;
-    }
-
-    .col1-2 h1 {
-      margin: 1% 0% 0% 1%;
-    }
-}
-
-
 /* ============================= Mise en forme générale de la page ================================= */
 body
     {
@@ -190,10 +12,19 @@ body
         flex: 1 1 100%;
         word-break: break-all;
         font-size: 1rem;
-        margin: 1% 3% 1%;
-        padding: 1% 3% 1%;
+        margin: 0% 3% 1%;
+        padding: 0% 3% 1%;
         width: 90%;
     }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100vw;
+            margin: 0% 1% 0% 1%;
+            padding: 0.5% 1% 0% 1%;
+        }
+    }
+
 
 h1      /* Petit changement taille de police h1 */
     {
@@ -206,6 +37,7 @@ h3      /* donne aux titres h3 (ceux de gauche) une bande noire, couleur de la t
         font-size: 1.5rem;
         background-color: black;
         text-align: center;
+        margin: 1% 0%;
     }
 
 .paul       /* un petit <span> qui sert à colorier mon prénom */
@@ -227,11 +59,34 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         border-bottom: 2px solid #64B5F6;
         padding-bottom: 0.5em;
         margin-left: 10%;
+        margin-top: 0%;
     }
 
+    @media (max-width: 600px) {
+        h4 {
+            text-align: center;
+            margin: 1% 0%;
+            padding: 0.5%
+        }
+    }
 .fa-star        /* Changement de couleur de l'icone étoile */
-    {
+    {   
         color: #64B5F6;
+    }
+
+.DP2 {
+    display: none;
+    border-radius: 100%;
+    max-width: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    max-height: 15vh;
+    margin: auto;
+}
+
+    @media (max-width: 600px) {
+        .DP2 {
+            display: block;
+        }
     }
 
 /* ============================= Mise en forme de la 1ère rangée ================================= */
@@ -240,6 +95,7 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
     {
         display: flex;
         flex-flow: row wrap;
+        height: auto;
     }
 
 .col1-1     /* Background et largeur de la partie photo */
@@ -247,24 +103,72 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         display: flex;
         background-color: #64B5F6;
         flex: 1 1 30%;
+        grid-area: photo;
+    }
+
+    @media (min-width: 300px) and (max-width: 600px) {
+    .col1-1 {
+        flex: 1 1 100%;
+        }
     }
 
 .col1-2     /* Alignement du texte et largeur de la partie Nom + Titre */
     {
         flex: 1 1 70%;
         text-align: left;
+        grid-area: name;
     }
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        .col1-2 {
+            flex: 1 1 100%;
+            text-align: center;
+            justify-self: center;
+            } 
+        }
 
 .col1-2 h1      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
     {
         margin: 12.5% 0% 0% 10%;
     }
 
+    @media (min-width: 601px) and (max-width: 800px) {
+    .col1-2 h1 {
+        margin: 12.5% 0% 0% 5%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .col1-2 h1 {
+            text-align: center;
+            margin: 0% 0% 0% 0%;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .col1-2 h1 {
+                font-size: 1.6rem;
+            }
+        }
+
 .col1-2 h2      /* N'arrivant pas à placer les Titres h1 et h2 là où je voulais j'ai recouru à l'usage de marges */
     {
         margin-left: 10%;
     }
 
+    @media (min-width: 601px) and (max-width: 800px) {
+        .col1-2 h2 {
+            margin: 3% 0% 0% 5%;
+          }
+        }
+
+    @media (max-width: 600px) {
+        .col1-2 h2 {
+            margin: 0% 0% 1% 0%;
+            text-align: center;
+            }
+        }
+    
 .DP     /* Mise en forme de la photo avec border-radius pour la forme ronde et box-shadow pour l'ombre exterieure */
     {
         transform: scale(0.5);
@@ -272,6 +176,12 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         max-width: 100%;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
         margin: auto;
+    }
+
+    @media (max-width: 600px) {
+        .DP {
+        display: none;
+        }
     }
 
 /* ============================= Mise en forme de la 2ème rangée ================================= */
@@ -287,7 +197,16 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
+        grid-area: contact;
     }
+    @media (min-width: 300px) and (max-width: 600px) {
+        .col2-1 {
+            flex: 1 1 100%;
+            line-height: 0.8;
+            text-align: center;
+            justify-self: center;
+            } 
+        }
 
 .col2-1 p       /* Encore de la gruge pour le placement du texte */
     {
@@ -298,6 +217,13 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
 .col2-2     /* Mise en forme largeur */
     {
         flex: 1 1 70%;
+        grid-area: formation;
+    }
+    
+    @media (max-width: 600px) {
+        .col2-2 {
+            flex: 1 1 100%;
+        }
     }
 
 /* ============================ MISE EN FORME GRID DE LA SECTION FORMATION ========================== */
@@ -308,6 +234,20 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
+        margin-bottom: 2%;
+    }
+
+    @media (max-width: 600px) {
+        .grid-formation{
+            grid-template-columns: auto;
+            margin-bottom: 0%;
+        }
+    }
+
+    @media (max-width: 920px) {
+        .grid-formation{
+            grid-template-columns: auto;
+        }
     }
 
 /* MISE EN FORME GRID PARTIE OPENCLASSROOMS */
@@ -359,28 +299,43 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
 .columnThree        /* Mise en forme flex de la 3ème rangée */          
     {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
     }
 
 .col3-1     /* Mise en forme largeur et bgColor partie A Propos de moi */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
+        grid-area: moi;
+    }
+
+    @media (max-width: 600px) {
+        .col3-1 {
+            flex: 1 1 100%;
+        }
     }
 
 .col3-1 p       /* Encore de la gruge pour le placement du texte */
     {
-        margin: auto 20px;
+        margin: auto 3%;
     }
 
 .icon       /* Placement des icones HTML5 / CSS3 */
     {
         text-align: center;
+        margin-bottom: 1%;
     }
 
 .col3-2     /* Mise en forme largeur partie Experience Profesionnelle */
     {
         flex: 1 1 70%;
+        grid-area: pro;
+    }
+
+    @media (max-width: 600px) {
+        .col3-2 {
+            flex: 1 1 100%;
+        }
     }
 
 /* ============================ MISE EN FORME GRID DE LA SECTION EXP PROFESIONNELLE ========================== */ 
@@ -391,7 +346,21 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
+        margin-bottom: 2%;
      }
+
+     @media (max-width: 600px) {
+        .grid-pro{
+            grid-template-columns: auto;
+            margin-bottom: 0%;
+        }
+    }
+
+    @media (max-width: 920px) {
+        .grid-pro{
+            grid-template-columns: auto;
+        }
+    }
 
 /* MISE EN FORME GRID PARTIE CANAL+ */
 
@@ -447,13 +416,42 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
 .columnFour     /* Mise en forme flex de la 3ème rangée */     
     {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
     }
 
 .col4-1     /* Mise en forme largeur et bgColor de la partie Loisirs */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
+        grid-area: loisir;
+    }
+
+    @media (max-width: 600px) {
+        .col4-1 {
+            flex: 1 1 100%;
+        }
+    }
+
+.col4-1 h3 {
+    margin-bottom: 15%;
+}
+
+    @media (max-width: 820px) {
+        .col4-1 h3 {
+            margin-bottom: 20%;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .col4-1 h3 {
+            margin-bottom: 25%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .col4-1 h3 {
+            margin-bottom: 0%;
+        }
     }
 
 .kiffe      /* Mise en forme et placement des icones Loisirs */
@@ -463,9 +461,21 @@ h4      /* titres h4 de droite, souligner en bleu + petites modifs */
         justify-content: space-around;
     }
 
+    @media (max-width: 600px) {
+        .kiffe {
+            transform: scale(0.7);
+        }
+    }
+
 .col4-2     /* Mise en forme largeur de la partie Recommandations */
     {
         flex: 1 1 70%;
         text-align: center;
+        grid-area: reco;
     }
 
+    @media (max-width: 600px) {
+        .col4-2 {
+            flex: 1 1 100%;
+        }
+    }
