@@ -255,12 +255,6 @@ h4      /* Modification des titres h4 */
         }
     }
 
-    @media (max-width: 920px) {
-        .grid-formation{
-            grid-template-columns: auto;
-        }
-    }
-
 .grid-formation p
     {
         line-height: 1.4;
@@ -381,12 +375,6 @@ h4      /* Modification des titres h4 */
         .grid-pro{
             grid-template-columns: auto;
             margin-bottom: 1rem;
-        }
-    }
-
-    @media (max-width: 920px) {
-        .grid-pro{
-            grid-template-columns: auto;
         }
     }
 
