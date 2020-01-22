@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
 /* ============================= Mise en forme générale de la page ================================= */
 body
     {
@@ -16,14 +18,13 @@ body
         width: 90vw;     
     }
 
-    @media (max-width: 600px) {     /* Modification quand l'écran fait 600 pixels ou moins de large pour le .container */
+    @media (max-width: 800px) {     /* Modification quand l'écran fait 800 pixels ou moins de large pour le .container */
         .container {
             width: 94vw;        
             margin: 0rem 0.2rem;        
             padding: 0.1rem 0.1rem 0rem 0.1rem;         
         }
-    }
-
+    }  
 
 h1      /* Modification des titres h1 */
     {
@@ -56,12 +57,12 @@ h4      /* Modification des titres h4 */
         font-weight: bold;      
         font-size: 1.3rem;      
         border-bottom: 2px solid #64B5F6;       
-        padding-bottom: 0.2rem;      
+        padding-bottom: 0.35rem;      
         margin-left: 3rem;       
         margin-top: 0rem;     
     }
 
-    @media (max-width: 600px) {     /* Modification quand l'écran fait 600px ou moins pour les titres h4 */
+    @media (max-width: 800px) {     /* Modification quand l'écran fait 600px ou moins pour les titres h4 */
         h4 {
             text-align: center;     
             margin: 1.3rem 0rem 0.7rem 0rem;      
@@ -79,12 +80,13 @@ h4      /* Modification des titres h4 */
     max-width: 100%;       
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);        
     max-height: 15vh;       
-    margin: auto;       
+    margin: auto; 
 }
 
-    @media (max-width: 600px) {     /* Modification de .DP2 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification de .DP2 quand l'écran fait 600px ou moins */
         .DP2 {
-            display: block;     
+            display: block;  
+            z-index: 4;     
         }
     }
 
@@ -113,7 +115,7 @@ h4      /* Modification des titres h4 */
         flex: 1 1 30%;      
     }
 
-    @media (max-width: 600px) {     /* Modification de .col1-1 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification de .col1-1 quand l'écran fait 600px ou moins */
     .col1-1 {
         display: none;      
         }
@@ -125,7 +127,7 @@ h4      /* Modification des titres h4 */
         text-align: left;
     }
 
-    @media (max-width: 600px) {      /* Modification de .col1-2 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {      /* Modification de .col1-2 quand l'écran fait 600px ou moins */
         .col1-2 {
             flex: 1 1 100%;
             text-align: center;
@@ -139,7 +141,7 @@ h4      /* Modification des titres h4 */
         margin: 8rem 0rem 0rem 3.5rem;
     }
 
-    @media (max-width: 600px) {     /* Modification des marges quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 600px ou moins */
         .col1-2 h1 {
             text-align: center;
             margin: 0rem 0rem;
@@ -160,7 +162,7 @@ h4      /* Modification des titres h4 */
     }
 
 
-    @media (max-width: 600px) {     /* Modification des marges quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 600px ou moins */
         .col1-2 h2 {
             margin: 0.5rem 0rem 1rem 0rem;
             text-align: center;
@@ -184,7 +186,7 @@ h4      /* Modification des titres h4 */
         display: flex;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .columnTwo {
             display: flex;
             flex-flow: row wrap;
@@ -197,7 +199,7 @@ h4      /* Modification des titres h4 */
         flex: 1 1 30%;
     }
 
-    @media (max-width: 600px) {      /* Modification de .col2-1 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {      /* Modification de .col2-1 quand l'écran fait 600px ou moins */
         .col2-1 {
             flex: 1 1 100%;
             line-height: 1.2;
@@ -212,7 +214,7 @@ h4      /* Modification des titres h4 */
     margin-bottom: 3rem;
 }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col2-1 h3 {
             margin-bottom: 1rem;
         }
@@ -230,7 +232,7 @@ h4      /* Modification des titres h4 */
         flex: 1 1 70%;
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col2-2 {
             flex: 1 1 100%;
             margin-bottom: 1rem;
@@ -248,7 +250,7 @@ h4      /* Modification des titres h4 */
         margin-bottom: 3rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .grid-formation{
             grid-template-columns: auto;
             margin-bottom: 1rem;
@@ -312,13 +314,20 @@ h4      /* Modification des titres h4 */
         flex-flow: row wrap;
     }
 
+    @media (max-width: 800px) {
+        .columnThree {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
 .col3-1     /* Mise en forme largeur et bgColor partie A Propos de moi */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col3-1 {
             flex: 1 1 100%;
             margin-bottom: 1rem;
@@ -336,7 +345,7 @@ h4      /* Modification des titres h4 */
         margin-bottom: 1rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col3-1 h3 {
             margin-bottom: 1rem;
         }
@@ -353,11 +362,16 @@ h4      /* Modification des titres h4 */
         flex: 1 1 70%;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col3-2 {
             flex: 1 1 100%;
             margin-bottom: 1rem;
         }
+    }
+
+.col3-2 h4
+    {
+        line-height: 1.5;
     }
 
 /* ============================ MISE EN FORME GRID DE LA SECTION EXP PROFESIONNELLE ========================== */ 
@@ -371,7 +385,7 @@ h4      /* Modification des titres h4 */
         margin-bottom: 3rem;
      }
 
-     @media (max-width: 600px) {
+     @media (max-width: 800px) {
         .grid-pro{
             grid-template-columns: auto;
             margin-bottom: 1rem;
@@ -448,7 +462,7 @@ h4      /* Modification des titres h4 */
         flex: 1 1 30%;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col4-1 {
             flex: 1 1 100%;
             margin-bottom: 1rem;
@@ -459,7 +473,7 @@ h4      /* Modification des titres h4 */
     margin-bottom: 2.7rem;
 }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col4-1 h3 {
             margin-bottom: 0.5rem;
         }
@@ -473,7 +487,7 @@ h4      /* Modification des titres h4 */
         justify-content: space-around;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .kiffe {
             transform: scale(0.7);
         }
@@ -485,7 +499,7 @@ h4      /* Modification des titres h4 */
         text-align: center;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .col4-2 {
             flex: 1 1 100%;
         }
