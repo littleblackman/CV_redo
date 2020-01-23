@@ -1,6 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@font-face
+{
+font-family: "Roboto-Regular";
+src: url(fonts/roboto/Roboto-Regular.ttf) format("ttf");
+}
 
 /* ============================= Mise en forme générale de la page ================================= */
+
 body
     {
         height: 100vh; /*Hauteur du corps de la page */
@@ -15,7 +20,7 @@ body
         font-size: 1rem;       
         margin: 0rem 0.2rem 0.3rem 0.2rem;       
         padding: 0rem 0.2rem 0.2rem;      
-        width: 90vw;     
+        width: 90vw;
     }
 
     @media (max-width: 800px) {     /* Modification quand l'écran fait 800 pixels ou moins de large pour le .container */
@@ -28,7 +33,8 @@ body
 
 h1      /* Modification des titres h1 */
     {
-        font-size: 1.8rem;      
+        font-size: 1.8rem;  
+        font-family: "Roboto-Regular";    
     }
 
 h3      /* Modification des titres h3 */
@@ -37,7 +43,8 @@ h3      /* Modification des titres h3 */
         font-size: 1.5rem;      
         background-color: black;        
         text-align: center;     
-        margin: 0.2rem 0rem;      
+        margin: 0.2rem 0rem;
+        font-family: "Roboto-Regular"; 
     }
 
 .paul       /* <span> qui entoure "PAUL" */
@@ -59,7 +66,8 @@ h4      /* Modification des titres h4 */
         border-bottom: 2px solid #64B5F6;       
         padding-bottom: 0.35rem;      
         margin-left: 3rem;       
-        margin-top: 0rem;     
+        margin-top: 0rem;   
+        font-family: "Roboto-Regular";  
     }
 
     @media (max-width: 800px) {     /* Modification quand l'écran fait 600px ou moins pour les titres h4 */
@@ -98,6 +106,11 @@ h4      /* Modification des titres h4 */
 .site
     {
         word-break: break-all;
+    }
+
+p
+    {
+        font-family: "Roboto-Regular";
     }
 
 /* ============================= Mise en forme de la 1ère rangée ================================= */

@@ -1,3 +1,9 @@
+@font-face
+{
+font-family: "Roboto-Regular";
+src: url(fonts/roboto/Roboto-Regular.ttf) format("ttf");
+}
+
 .burger {
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -6,10 +12,22 @@
     width: 100%;
     z-index: 3;
   }
+
+.menu a:link
+  {
+    color: #64B5F6;
+    text-decoration: none;
+  }
   
-  .burger ul {
-    display: flex;
-    flex-flow: column wrap;
+.menu a:visited
+  {
+    color: #64B5F6;
+    text-decoration: none;
+  }
+
+  .burger ul 
+    {
+    display: block;
     position: fixed;
     right: 0.5rem;
     top: 3rem;
@@ -21,8 +39,9 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+    font-family: "Roboto-Regular";
   }
- 
+
   .burger li a {
     display: block;
     padding: 20px 20px;
@@ -30,8 +49,9 @@
     text-decoration: none;
   }
   
-  .burger li a:hover {
-    background-color: #f4f4f4;
+  .menu a:hover {
+    color: purple;
+    background-color: rgb(158, 152, 152);
   }
   
   .burger .menu {
