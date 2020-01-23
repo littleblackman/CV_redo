@@ -113,6 +113,11 @@ p
         font-family: "Roboto-Regular";
     }
 
+h5
+    {
+        font-family: "Roboto-Regular";
+    }
+
 /* ============================= Mise en forme de la 1ère rangée ================================= */
 
 .columnOne      /* Modification de la 1ère rangée de la page */    
@@ -172,6 +177,7 @@ p
         margin-left: 3.5rem;
         margin-top: 0.5rem;
         margin-bottom: 7rem;
+        font-family: "Roboto-Regular";
     }
 
 
