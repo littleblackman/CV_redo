@@ -1,3 +1,189 @@
+/* ======================================= MEDIA QUERIES ====================================== */
+
+/* =========================== Ecrans de moins de 360px ============================ */
+
+@media (max-width: 360px) {    
+    .col1-2 h1 {
+        font-size: 1.6rem !important;
+    }
+}
+
+
+/* =========================== Ecrans de moins de 800px ============================ */
+
+@media (max-width: 800px) {    
+    .container {
+        width: 94vw !important;        
+        margin: 0rem 0.2rem !important;        
+        padding: 0.1rem 0.1rem 0rem 0.1rem !important; 
+    }
+}  
+
+/* @media (max-width: 800px) {
+    .btn {
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+} */ 
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (max-width: 800px) {     
+    h4 {
+        text-align: center !important;     
+        margin: 1.3rem 0rem 0.7rem 0rem !important;      
+        padding: 0.3rem !important; 
+    }
+}
+
+
+@media (max-width: 800px) {     
+    .DP2 {
+        display: block !important;  
+        z-index: 4 !important;     
+    }
+}
+
+@media (max-width: 800px) {     
+    .col1-1 {
+        display: none !important;      
+        }
+    }
+
+@media (max-width: 800px) {      
+        .col1-2 {
+            flex: 1 1 100% !important;
+            text-align: center !important;
+            justify-self: center !important;
+            margin: 2rem 0rem !important;
+            } 
+        }
+
+@media (max-width: 800px) {     
+        .col1-2 h1 {
+            text-align: center !important;
+            margin: 0rem 0rem !important;
+            }
+        }
+
+@media (max-width: 800px) {     
+        .col1-2 h2 {
+            margin: 0.5rem 0rem 1rem 0rem !important;
+            text-align: center !important;
+            }
+        }
+
+@media (max-width: 800px) {
+        .columnTwo {
+            display: flex !important;
+            flex-flow: row wrap !important;
+        }
+    }
+
+@media (max-width: 800px) {     
+        .col2-1 {
+            flex: 1 1 100% !important;
+            line-height: 1.2 !important;
+            text-align: center !important;
+            justify-self: center !important;
+            margin-bottom: 1rem !important;
+            } 
+        }
+
+@media (max-width: 800px) {
+        .col2-1 h3 {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col2-2 {
+            flex: 1 1 100% !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .grid-formation{
+            grid-template-columns: auto !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .columnThree {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col3-1 {
+            flex: 1 1 100% !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col3-1 h3 {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col3-2 {
+            flex: 1 1 100% !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .grid-pro{
+            grid-template-columns: auto !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col4-1 {
+            flex: 1 1 100% !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col4-1 h3 {
+            margin-bottom: 0.5rem !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .kiffe {
+            transform: scale(0.7) !important;
+        }
+    }
+
+@media (max-width: 800px) {
+        .col4-2 {
+            flex: 1 1 100% !important;
+        }
+    }
+
+@media (max-width: 800px) {
+    article p {
+        margin: 1rem 1rem 1rem 1rem !important;
+    }
+}
 /* ============================= Mise en forme générale de la page ================================= */
 
 body
@@ -22,13 +208,7 @@ body
         width: 90vw;
     }
 
-    @media (max-width: 800px) {     /* Modification quand l'écran fait 800 pixels ou moins de large pour le .container */
-        .container {
-            width: 94vw;        
-            margin: 0rem 0.2rem;        
-            padding: 0.1rem 0.1rem 0rem 0.1rem;         
-        }
-    }  
+/*
 
 .btn
     {
@@ -36,17 +216,17 @@ body
         align-self: flex-end;
     }
 
-    @media (max-width: 800px) {
-        .btn {
-            margin-bottom: 1rem;
-            margin-left: 0rem;
-        }
-    }
+    */
 
 
 h1      /* Modification des titres h1 */
     {
-        font-size: 1.8rem;      
+        font-size: 2.7rem;      
+    }
+
+h2
+    {
+        font-size: 1.8rem;
     }
 
 h3      /* Modification des titres h3 */
@@ -80,13 +260,6 @@ h4      /* Modification des titres h4 */
         margin-top: 0rem;    
     }
 
-    @media (max-width: 800px) {     /* Modification quand l'écran fait 800px ou moins pour les titres h4 */
-        h4 {
-            text-align: center;     
-            margin: 1.3rem 0rem 0.7rem 0rem;      
-            padding: 0.3rem;      
-        }
-    }
 .fa-star        /* Modification de l'icone étoile */
     {   
         color: #64B5F6;     
@@ -101,12 +274,6 @@ h4      /* Modification des titres h4 */
     margin: auto; 
 }
 
-    @media (max-width: 800px) {     /* Modification de .DP2 quand l'écran fait 800px ou moins */
-        .DP2 {
-            display: block;  
-            z-index: 4;     
-        }
-    }
 
 .mail
     {
@@ -118,7 +285,13 @@ h4      /* Modification des titres h4 */
         word-break: break-all;
     }
 
+article p
+    {
+        margin: 1.5rem 2rem 2rem 2rem;
+        line-height: 1.5rem;
+    }
 
+    
 /* ============================= Mise en forme de la 1ère rangée ================================= */
 
 .columnOne      /* Modification de la 1ère rangée de la page */    
@@ -134,45 +307,17 @@ h4      /* Modification des titres h4 */
         flex: 1 1 30%;      
     }
 
-    @media (max-width: 800px) {     /* Modification de .col1-1 quand l'écran fait 800px ou moins */
-    .col1-1 {
-        display: none;      
-        }
-    }
-
 .col1-2     /* Modification du bloc Nom et Titre */
     {
         flex: 1 1 70%;
         text-align: left;
     }
 
-    @media (max-width: 800px) {      /* Modification de .col1-2 quand l'écran fait 800px ou moins */
-        .col1-2 {
-            flex: 1 1 100%;
-            text-align: center;
-            justify-self: center;
-            margin: 2rem 0rem;
-            } 
-        }
-
 .col1-2 h1      /* Placement du titre h1 via les marges */
     {
         margin: 8rem 0rem 0rem 3.5rem;
     }
-
-    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 800px ou moins */
-        .col1-2 h1 {
-            text-align: center;
-            margin: 0rem 0rem;
-            }
-        }
         
-        @media (max-width: 360px) {     /* Modification de la taille de typo quand l'écran fait 360px ou moins */
-            .col1-2 h1 {
-                font-size: 1.6rem;
-            }
-        }
-
 .col1-2 h2      /* Placement des titres h2 via les marges */
     {
         margin-left: 3.5rem;
@@ -180,13 +325,6 @@ h4      /* Modification des titres h4 */
         margin-bottom: 7rem;
     }
 
-
-    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 800px ou moins */
-        .col1-2 h2 {
-            margin: 0.5rem 0rem 1rem 0rem;
-            text-align: center;
-            }
-        }
     
 .DP     /* Mise en forme de la photo principale avec border-radius pour la forme ronde et box-shadow pour l'ombre exterieure */
     {
@@ -205,59 +343,24 @@ h4      /* Modification des titres h4 */
         display: flex;
     }
 
-    @media (max-width: 800px) {
-        .columnTwo {
-            display: flex;
-            flex-flow: row wrap;
-        }
-    }
-
 .col2-1     /* Mise en forme largeur + couleur de fond partie Contact */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
     }
 
-    @media (max-width: 800px) {      /* Modification de .col2-1 quand l'écran fait 800px ou moins */
-        .col2-1 {
-            flex: 1 1 100%;
-            line-height: 1.2;
-            text-align: center;
-            justify-self: center;
-            margin-bottom: 1rem;
-            } 
-        }
-
 .col2-1 h3
 {
     margin-bottom: 3rem;
 }
 
-    @media (max-width: 800px) {
-        .col2-1 h3 {
-            margin-bottom: 1rem;
-        }
-    }
 
-.col2-1 p       /* Placement des paragraphs au sein de .col2-1 */
-    {
-        margin-left: 0.8rem;
-        margin-right: 0.5rem;
-        line-height: 1.4;
-    }
 
 .col2-2     /* Mise en forme largeur */
     {
         flex: 1 1 70%;
     }
     
-    @media (max-width: 800px) {
-        .col2-2 {
-            flex: 1 1 100%;
-            margin-bottom: 1rem;
-        }
-    }
-
 /* ============================ MISE EN FORME GRID DE LA SECTION FORMATION ========================== */
 
 .grid-formation     /* Mise en forme de la grid principale */
@@ -266,14 +369,8 @@ h4      /* Modification des titres h4 */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
+        column-gap: 5%;
         margin-bottom: 3rem;
-    }
-
-    @media (max-width: 800px) {
-        .grid-formation{
-            grid-template-columns: auto;
-            margin-bottom: 1rem;
-        }
     }
 
 .grid-formation p
@@ -333,41 +430,15 @@ h4      /* Modification des titres h4 */
         flex-flow: row wrap;
     }
 
-    @media (max-width: 800px) {
-        .columnThree {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    }
-
 .col3-1     /* Mise en forme largeur et bgColor partie A Propos de moi */
     {
         background-color: #64B5F6;
         flex: 1 1 30%;
     }
 
-    @media (max-width: 800px) {
-        .col3-1 {
-            flex: 1 1 100%;
-            margin-bottom: 1rem;
-        }
-    }
-
-.col3-1 p       /* Placement de texte via marges */
-    {
-        margin: 2rem 1rem 1rem 1rem;
-        line-height: 1.4;
-    }
-
 .col3-1 h3
     {
         margin-bottom: 1rem;
-    }
-
-    @media (max-width: 800px) {
-        .col3-1 h3 {
-            margin-bottom: 1rem;
-        }
     }
 
 .icon       /* Placement des icones HTML5 / CSS3 */
@@ -379,13 +450,6 @@ h4      /* Modification des titres h4 */
 .col3-2     /* Mise en forme largeur partie Experience Profesionnelle */
     {
         flex: 1 1 70%;
-    }
-
-    @media (max-width: 800px) {
-        .col3-2 {
-            flex: 1 1 100%;
-            margin-bottom: 1rem;
-        }
     }
 
 .col3-2 h4
@@ -401,22 +465,14 @@ h4      /* Modification des titres h4 */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
+        column-gap: 5%;
         margin-bottom: 3rem;
      }
-
-     @media (max-width: 800px) {
-        .grid-pro{
-            grid-template-columns: auto;
-            margin-bottom: 1rem;
-        }
-    }
 
     .grid-pro p {
         line-height: 1.4;
         margin-bottom: 1rem;
     }
-
-
 
 /* MISE EN FORME GRID PARTIE CANAL+ */
 
@@ -481,23 +537,9 @@ h4      /* Modification des titres h4 */
         flex: 1 1 30%;
     }
 
-    @media (max-width: 800px) {
-        .col4-1 {
-            flex: 1 1 100%;
-            margin-bottom: 1rem;
-        }
-    }
-
 .col4-1 h3 {        /* Placement des icones via la marge du bas de "Loisirs" */
     margin-bottom: 2.7rem;
 }
-
-    @media (max-width: 800px) {
-        .col4-1 h3 {
-            margin-bottom: 0.5rem;
-        }
-    }
-
 
 .kiffe      /* Mise en forme et placement des icones Loisirs */
     {
@@ -506,20 +548,8 @@ h4      /* Modification des titres h4 */
         justify-content: space-around;
     }
 
-    @media (max-width: 800px) {
-        .kiffe {
-            transform: scale(0.7);
-        }
-    }
-
 .col4-2     /* Mise en forme largeur de la partie Recommandations */
     {
         flex: 1 1 70%;
         text-align: center;
-    }
-
-    @media (max-width: 800px) {
-        .col4-2 {
-            flex: 1 1 100%;
-        }
     }
