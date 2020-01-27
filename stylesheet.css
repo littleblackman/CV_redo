@@ -274,6 +274,10 @@ h4      /* Modification des titres h4 */
     margin: auto; 
 }
 
+h4 i
+    {
+        margin-right: 1.5rem;
+    }
 
 .mail
     {
