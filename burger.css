@@ -1,8 +1,4 @@
-@font-face
-{
-font-family: "Roboto-Regular";
-src: url(fonts/roboto/Roboto-Regular.ttf) format("ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .burger {
     background-color: rgba(255, 255, 255, 0.2);
@@ -39,7 +35,7 @@ src: url(fonts/roboto/Roboto-Regular.ttf) format("ttf");
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
-    font-family: "Roboto-Regular";
+    font-family: "Roboto";
   }
 
   .burger li a {
