@@ -31,6 +31,20 @@ body
         }
     }  
 
+.btn
+    {
+        background-color: #64B5F6;
+        align-self: flex-end;
+    }
+
+    @media (max-width: 800px) {
+        .btn {
+            margin-bottom: 1rem;
+            margin-left: 0rem;
+        }
+    }
+
+
 h1      /* Modification des titres h1 */
     {
         font-size: 1.8rem;  
@@ -70,7 +84,7 @@ h4      /* Modification des titres h4 */
         font-family: "Roboto-Regular";  
     }
 
-    @media (max-width: 800px) {     /* Modification quand l'écran fait 600px ou moins pour les titres h4 */
+    @media (max-width: 800px) {     /* Modification quand l'écran fait 800px ou moins pour les titres h4 */
         h4 {
             text-align: center;     
             margin: 1.3rem 0rem 0.7rem 0rem;      
@@ -91,7 +105,7 @@ h4      /* Modification des titres h4 */
     margin: auto; 
 }
 
-    @media (max-width: 800px) {     /* Modification de .DP2 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification de .DP2 quand l'écran fait 800px ou moins */
         .DP2 {
             display: block;  
             z-index: 4;     
@@ -133,7 +147,7 @@ h5
         flex: 1 1 30%;      
     }
 
-    @media (max-width: 800px) {     /* Modification de .col1-1 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification de .col1-1 quand l'écran fait 800px ou moins */
     .col1-1 {
         display: none;      
         }
@@ -145,7 +159,7 @@ h5
         text-align: left;
     }
 
-    @media (max-width: 800px) {      /* Modification de .col1-2 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {      /* Modification de .col1-2 quand l'écran fait 800px ou moins */
         .col1-2 {
             flex: 1 1 100%;
             text-align: center;
@@ -159,7 +173,7 @@ h5
         margin: 8rem 0rem 0rem 3.5rem;
     }
 
-    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 800px ou moins */
         .col1-2 h1 {
             text-align: center;
             margin: 0rem 0rem;
@@ -181,7 +195,7 @@ h5
     }
 
 
-    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {     /* Modification des marges quand l'écran fait 800px ou moins */
         .col1-2 h2 {
             margin: 0.5rem 0rem 1rem 0rem;
             text-align: center;
@@ -218,7 +232,7 @@ h5
         flex: 1 1 30%;
     }
 
-    @media (max-width: 800px) {      /* Modification de .col2-1 quand l'écran fait 600px ou moins */
+    @media (max-width: 800px) {      /* Modification de .col2-1 quand l'écran fait 800px ou moins */
         .col2-1 {
             flex: 1 1 100%;
             line-height: 1.2;
@@ -353,7 +367,7 @@ h5
         }
     }
 
-.col3-1 p       /* Encore de la gruge pour le placement du texte */
+.col3-1 p       /* Placement de texte via marges */
     {
         margin: 2rem 1rem 1rem 1rem;
         line-height: 1.4;
