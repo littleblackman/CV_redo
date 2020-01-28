@@ -265,6 +265,11 @@ h4      /* Modification des titres h4 */
         color: #64B5F6;     
     }
 
+.fa-book-reader
+{   
+    color: #64B5F6;     
+}
+
 .DP2 {      /* Modification de l'image secondaire */
     display: none;      
     border-radius: 100%;        
