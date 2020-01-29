@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream:stylesheet.css
-=======
 /* =========================== VARIABLES ======================= */
 
 $color-main: #64B5F6;
@@ -141,13 +139,18 @@ $color-main: #64B5F6;
 } */
 }  
 
->>>>>>> Stashed changes:Sass/stylesheet.scss
 /* ============================= Mise en forme générale de la page ================================= */
+
 body
     {
         height: 100vh; /*Hauteur du corps de la page */
         width: 100%; /* Largeur du corps de la page */
     }
+
+* {
+    font-family: "Roboto";
+}
+
 
 .container      /* Mise en display flex direction colonnes, padding de chaque côté, break-word pour les césures */
     {
@@ -155,32 +158,30 @@ body
         flex-direction: column;     
         flex: 1 1 100%;       
         font-size: 1rem;       
-        margin: 0% 3% 1%;       
-        padding: 0% 3% 1%;      
-        width: 90%;     
+        margin: 0rem 0.2rem 0.3rem 0.2rem;       
+        padding: 0rem 0.2rem 0.2rem;      
+        width: 90vw;
     }
 
-<<<<<<< Updated upstream:stylesheet.css
-    @media (max-width: 600px) {     /* Modification quand l'écran fait 600 pixels ou moins de large pour le .container */
-        .container {
-            width: 94vw;        
-            margin: 0% 2% 0% 2%;        
-            padding: 0.5% 0.5% 0% 0.5%;         
-        }
-=======
 /*
 
 .btn
     {
         background-color: $color-main;
         align-self: flex-end;
->>>>>>> Stashed changes:Sass/stylesheet.scss
     }
+
+    */
 
 
 h1      /* Modification des titres h1 */
     {
-        font-size: 1.8rem;      
+        font-size: 2.7rem;      
+    }
+
+h2
+    {
+        font-size: 1.8rem;
     }
 
 h3      /* Modification des titres h3 */
@@ -189,7 +190,7 @@ h3      /* Modification des titres h3 */
         font-size: 1.5rem;      
         background-color: black;        
         text-align: center;     
-        margin: 1% 0%;      
+        margin: 0.2rem 0rem;
     }
 
 .paul       /* <span> qui entoure "PAUL" */
@@ -208,22 +209,6 @@ h4      /* Modification des titres h4 */
         text-align: left;       
         font-weight: bold;      
         font-size: 1.3rem;      
-<<<<<<< Updated upstream:stylesheet.css
-        border-bottom: 2px solid #64B5F6;       
-        padding-bottom: 1%;      
-        margin-left: 10%;       
-        margin-top: 0%;     
-    }
-
-    @media (max-width: 600px) {     /* Modification quand l'écran fait 600px ou moins pour les titres h4 */
-        h4 {
-            text-align: center;     
-            margin: 3% 0% 1% 0%;      
-            padding: 0.5%;      
-        }
-    }
-.fa-star        /* Modification de l'icone étoile */
-=======
         border-bottom: 2px solid $color-main;       
         padding-bottom: 0.35rem;      
         margin-left: 3rem;       
@@ -231,13 +216,10 @@ h4      /* Modification des titres h4 */
     }
 
 .fa-star          /* Modification de l'icone étoile */
->>>>>>> Stashed changes:Sass/stylesheet.scss
     {   
         color: $color-main;     
     }
 
-<<<<<<< Updated upstream:stylesheet.css
-=======
 .fa-book-reader
     {
         @extend .fa-star;
@@ -253,20 +235,18 @@ h4      /* Modification des titres h4 */
         @extend .fa-star;
     }
 
->>>>>>> Stashed changes:Sass/stylesheet.scss
 .DP2 {      /* Modification de l'image secondaire */
     display: none;      
     border-radius: 100%;        
     max-width: 100%;       
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);        
     max-height: 15vh;       
-    margin: auto;       
+    margin: auto; 
 }
 
-    @media (max-width: 600px) {     /* Modification de .DP2 quand l'écran fait 600px ou moins */
-        .DP2 {
-            display: block;     
-        }
+h4 i
+    {
+        margin-right: 1.5rem;
     }
 
 .mail
@@ -274,6 +254,18 @@ h4      /* Modification des titres h4 */
         word-break: break-all;
     }
 
+.site
+    {
+        word-break: break-all;
+    }
+
+article p
+    {
+        margin: 1.5rem 2rem 2rem 2rem;
+        line-height: 1.5rem;
+    }
+
+    
 /* ============================= Mise en forme de la 1ère rangée ================================= */
 
 .columnOne      /* Modification de la 1ère rangée de la page */    
@@ -288,68 +280,24 @@ h4      /* Modification des titres h4 */
         @include column-left;      
     }
 
-    @media (max-width: 600px) {     /* Modification de .col1-1 quand l'écran fait 600px ou moins */
-    .col1-1 {
-        display: none;      
-        }
-    }
-
 .col1-2     /* Modification du bloc Nom et Titre */
     {
         @include column-right;
         text-align: left;
     }
 
-    @media (max-width: 600px) {      /* Modification de .col1-2 quand l'écran fait 600px ou moins */
-        .col1-2 {
-            flex: 1 1 100%;
-            text-align: center;
-            justify-self: center;
-            margin: 3% 0%;
-            } 
-        }
-
 .col1-2 h1      /* Placement du titre h1 via les marges */
     {
-        margin: 12.5% 0% 0% 10%;
+        margin: 8rem 0rem 0rem 3.5rem;
     }
-
-    @media (min-width: 601px) and (max-width: 800px) {      /* Modification du placement entre 600 et 800px de largeur d'écran */
-    .col1-2 h1 {
-        margin: 12.5% 0% 0% 5%;
-        }
-    }
-
-    @media (max-width: 600px) {     /* Modification des marges quand l'écran fait 600px ou moins */
-        .col1-2 h1 {
-            text-align: center;
-            margin: 0% 0% 0% 0%;
-            }
-        }
         
-        @media (max-width: 360px) {     /* Modification de la taille de typo quand l'écran fait 360px ou moins */
-            .col1-2 h1 {
-                font-size: 1.6rem;
-            }
-        }
-
 .col1-2 h2      /* Placement des titres h2 via les marges */
     {
-        margin-left: 10%;
+        margin-left: 3.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 7rem;
     }
 
-    @media (min-width: 601px) and (max-width: 800px) {      /* Modification du placement entre 600 et 800px de largeur d'écran */
-        .col1-2 h2 {
-            margin: 3% 0% 0% 5%;
-          }
-        }
-
-    @media (max-width: 600px) {     /* Modification des marges quand l'écran fait 600px ou moins */
-        .col1-2 h2 {
-            margin: 0% 0% 1% 0%;
-            text-align: center;
-            }
-        }
     
 .DP     /* Mise en forme de la photo principale avec border-radius pour la forme ronde et box-shadow pour l'ombre exterieure */
     {
@@ -368,58 +316,23 @@ h4      /* Modification des titres h4 */
         display: flex;
     }
 
-    @media (max-width: 600px) {
-        .columnTwo {
-            display: flex;
-            flex-flow: row wrap;
-        }
-    }
-
 .col2-1     /* Mise en forme largeur + couleur de fond partie Contact */
     {
         @include column-left;
     }
 
-    @media (max-width: 600px) {      /* Modification de .col2-1 quand l'écran fait 600px ou moins */
-        .col2-1 {
-            flex: 1 1 100%;
-            line-height: 1.2;
-            text-align: center;
-            justify-self: center;
-            margin-bottom: 3%;
-            } 
-        }
-
-.col2-1 h3      /* Modification du titre h3 "CONTACT" par défaut & à moins de 600px */
+.col2-1 h3
 {
-    margin-bottom: 15%;
+    margin-bottom: 3rem;
 }
 
-    @media (max-width: 600px) {
-        .col2-1 h3 {
-            margin-bottom: 3%;
-        }
-    }
 
-.col2-1 p       /* Placement des paragraphs au sein de .col2-1 */
-    {
-        margin-left: 3%;
-        margin-right: 2%;
-        line-height: 1.4;
-    }
 
 .col2-2     /* Mise en forme largeur */
     {
         @include column-right;
     }
     
-    @media (max-width: 600px) {     /* Modification de .col2-2 quand l'écran fait moins de 600px */
-        .col2-2 {
-            flex: 1 1 100%;
-            margin-bottom: 3%;
-        }
-    }
-
 /* ============================ MISE EN FORME GRID DE LA SECTION FORMATION ========================== */
 
 .grid-formation     /* Mise en forme de la grid principale */
@@ -428,23 +341,11 @@ h4      /* Modification des titres h4 */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
-        margin-bottom: 2%;
+        column-gap: 5%;
+        margin-bottom: 3rem;
     }
 
-    @media (max-width: 600px) {
-        .grid-formation{
-            grid-template-columns: auto;
-            margin-bottom: 3%;
-        }
-    }
-
-    @media (max-width: 920px) {
-        .grid-formation{
-            grid-template-columns: auto;
-        }
-    }
-
-.grid-formation p       /* Donne un line-height aux paragraphes au sein de .grid-formation */
+.grid-formation p
     {
         line-height: 1.4;
     }
@@ -506,38 +407,15 @@ h4      /* Modification des titres h4 */
         @include column-left;
     }
 
-    @media (max-width: 600px) {     /* Modification de la partie A Propos de moi quand l'écran fait moins de 600px */
-        .col3-1 {
-            flex: 1 1 100%;
-            margin-bottom: 3%;
-        }
-    }
-
-.col3-1 p       /* Placement de texte avec les marges et espacement du texte */
+.col3-1 h3
     {
-        margin: auto 3%;
-        line-height: 1.4;
-    }
-
-.col3-1 h3      /* Placement du texte sous "A PROPOS DE MOI" par défaut et avec ecran de moins de 600px */
-    {
-        margin-bottom: 20%;
-    }
-
-    @media (max-width: 600px) {
-        .col3-1 h3 {
-            margin-bottom: 3%;
-        }
+        margin-bottom: 1rem;
     }
 
 .icon       /* Placement des icones HTML5 / CSS3 */
     {
         text-align: center;
-<<<<<<< Updated upstream:stylesheet.css
-        margin-bottom: 1%;
-=======
         @include margin--800px();
->>>>>>> Stashed changes:Sass/stylesheet.scss
     }
 
 .col3-2     /* Mise en forme largeur partie Experience Profesionnelle */
@@ -545,11 +423,9 @@ h4      /* Modification des titres h4 */
         @include column-right;
     }
 
-    @media (max-width: 600px) {     /* MAJ partie Experience Professionnelle quand l'écran fait moins de 600px */
-        .col3-2 {
-            flex: 1 1 100%;
-            margin-bottom: 3%;
-        }
+.col3-2 h4
+    {
+        line-height: 1.5;
     }
 
 /* ============================ MISE EN FORME GRID DE LA SECTION EXP PROFESIONNELLE ========================== */ 
@@ -560,31 +436,14 @@ h4      /* Modification des titres h4 */
         grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
         grid-template-rows: minmax(min-content, max-content);
         grid-gap: 1%;
-        margin-bottom: 2%;
+        column-gap: 5%;
+        margin-bottom: 3rem;
      }
-
-     @media (max-width: 600px) {
-        .grid-pro{
-            grid-template-columns: auto;
-            margin-bottom: 3%;
-        }
-    }
-
-    @media (max-width: 920px) {
-        .grid-pro{
-            grid-template-columns: auto;
-        }
-    }
 
     .grid-pro p {
         line-height: 1.4;
-<<<<<<< Updated upstream:stylesheet.css
-=======
         @include margin--800px();
->>>>>>> Stashed changes:Sass/stylesheet.scss
     }
-
-
 
 /* MISE EN FORME GRID PARTIE CANAL+ */
 
@@ -610,7 +469,7 @@ h4      /* Modification des titres h4 */
 
 .cplussuite p
      {
-         margin-top: 0%;
+         margin-top: 0rem;
      }
 
 /* MISE EN FORME GRID PARTIE HOTEL DE TOIRAS */
@@ -648,46 +507,9 @@ h4      /* Modification des titres h4 */
         @include column-left;
     }
 
-    @media (max-width: 600px) {     /* Mise en forme partie Loisirs quand l'écran fait moins de 600px */
-        .col4-1 {
-            flex: 1 1 100%;
-            margin-bottom: 3%;
-        }
-    }
-
-.col4-1 h3 {        /* Placement des icones Loisirs a multiples tailles d'écran */
-    margin-bottom: 15%;
+.col4-1 h3 {        /* Placement des icones via la marge du bas de "Loisirs" */
+    margin-bottom: 2.7rem;
 }
-
-    @media (min-width: 2000px) {
-        .col4-1 h3 {
-            margin-bottom: 0%;
-        }
-    }
-
-    @media (min-width: 1400px) {
-        .col4-1 h3 {
-            margin-bottom: 10%;
-        }
-    }
-
-    @media (max-width: 820px) {
-        .col4-1 h3 {
-            margin-bottom: 20%;
-        }
-    }
-
-    @media (max-width: 650px) {
-        .col4-1 h3 {
-            margin-bottom: 25%;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .col4-1 h3 {
-            margin-bottom: 0%;
-        }
-    }
 
 .kiffe      /* Mise en forme et placement des icones Loisirs */
     {
@@ -696,20 +518,8 @@ h4      /* Modification des titres h4 */
         justify-content: space-around;
     }
 
-    @media (max-width: 600px) {     /* Réduction de la taille des icones quand l'écran fait 600px ou moins */
-        .kiffe {
-            transform: scale(0.7);
-        }
-    }
-
 .col4-2     /* Mise en forme largeur de la partie Recommandations */
     {
         @include column-right;
         text-align: center;
-    }
-
-    @media (max-width: 600px) {     /* Mise en forme partie Recommandations quand l'écran fait 600px ou moins */
-        .col4-2 {
-            flex: 1 1 100%;
-        }
     }
