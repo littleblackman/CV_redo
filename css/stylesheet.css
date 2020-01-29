@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* =========================== VARIABLES ======================= */
+/* ============================ MIXINS ===================== */
+/* ======================================= MEDIA QUERIES ====================================== */
+/* =========================== Ecrans de moins de 360px ============================ */
+@media (max-width: 360px) {
+  .col1-2 h1 {
+    font-size: 1.6rem !important;
+  }
+}
+/* =========================== Ecrans de moins de 800px ============================ */
+@media (max-width: 800px) {
+  .container {
+    width: 94vw !important;
+    margin: 0rem 0.2rem !important;
+    padding: 0.1rem 0.1rem 0rem 0.1rem !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  h4 {
+    text-align: center !important;
+    margin: 1.3rem 0rem 0.7rem 0rem !important;
+    padding: 0.3rem !important;
+  }
+
+  .DP2 {
+    display: block !important;
+    z-index: 4 !important;
+  }
+
+  .col1-1 {
+    display: none !important;
+  }
+
+  .col1-2 {
+    flex: 1 1 100% !important;
+    text-align: center !important;
+    justify-self: center !important;
+    margin: 2rem 0rem !important;
+  }
+
+  .col1-2 h1 {
+    text-align: center !important;
+    margin: 0rem 0rem !important;
+  }
+
+  .col1-2 h2 {
+    margin: 0.5rem 0rem 1rem 0rem !important;
+    text-align: center !important;
+  }
+
+  .columnTwo {
+    display: flex !important;
+    flex-flow: row wrap !important;
+  }
+
+  .col2-1 {
+    flex: 1 1 100% !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    justify-self: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .col2-1 h3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .col2-2 {
+    flex: 1 1 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .grid-formation {
+    grid-template-columns: auto !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .columnThree {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .col3-1 {
+    flex: 1 1 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .col3-1 h3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .col3-2 {
+    flex: 1 1 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .grid-pro {
+    grid-template-columns: auto !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .col4-1 {
+    flex: 1 1 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .col4-1 h3 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .kiffe {
+    transform: scale(0.7) !important;
+  }
+
+  .col4-2 {
+    flex: 1 1 100% !important;
+  }
+
+  article p {
+    margin: 1rem 1rem 1rem 1rem !important;
+  }
+
+  /* @media (max-width: 800px) {
+      .btn {
+          margin-bottom: 1rem;
+          margin-left: 0rem;
+      }
+  } */
+}
+/* ============================= Mise en forme générale de la page ================================= */
+body {
+  height: 100vh;
+  /*Hauteur du corps de la page */
+  width: 100%;
+  /* Largeur du corps de la page */
+}
+
+* {
+  font-family: "Roboto";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  font-size: 1rem;
+  margin: 0rem 0.2rem 0.3rem 0.2rem;
+  padding: 0rem 0.2rem 0.2rem;
+  width: 90vw;
+}
+
+/*
+
+.btn
+    {
+        background-color: $color-main;
+        align-self: flex-end;
+    }
+
+    */
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #64B5F6;
+  font-size: 1.5rem;
+  background-color: black;
+  text-align: center;
+  margin: 0.2rem 0rem;
+}
+
+.paul {
+  color: #64B5F6;
+}
+
+.develo {
+  border-bottom: 1px solid #64B5F6;
+}
+
+h4 {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #64B5F6;
+  padding-bottom: 0.35rem;
+  margin-left: 3rem;
+  margin-top: 0rem;
+}
+
+.fa-star, .fa-building, .fa-thumbs-up, .fa-book-reader {
+  color: #64B5F6;
+}
+
+.DP2 {
+  /* Modification de l'image secondaire */
+  display: none;
+  border-radius: 100%;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  max-height: 15vh;
+  margin: auto;
+}
+
+h4 i {
+  margin-right: 1.5rem;
+}
+
+.mail {
+  word-break: break-all;
+}
+
+.site {
+  word-break: break-all;
+}
+
+article p {
+  margin: 1.5rem 2rem 2rem 2rem;
+  line-height: 1.5rem;
+}
+
+/* ============================= Mise en forme de la 1ère rangée ================================= */
+.columnOne {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col1-1 {
+  display: flex;
+  flex: 1 1 30%;
+  background-color: #64B5F6;
+}
+
+.col1-2 {
+  flex: 1 1 70%;
+  text-align: left;
+}
+
+.col1-2 h1 {
+  margin: 8rem 0rem 0rem 3.5rem;
+}
+
+.col1-2 h2 {
+  margin-left: 3.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 7rem;
+}
+
+.DP {
+  transform: scale(0.5);
+  border-radius: 100%;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+/* ============================= Mise en forme de la 2ème rangée ================================= */
+.columnTwo {
+  display: flex;
+}
+
+.col2-1 {
+  flex: 1 1 30%;
+  background-color: #64B5F6;
+}
+
+.col2-1 h3 {
+  margin-bottom: 3rem;
+}
+
+.col2-2 {
+  flex: 1 1 70%;
+}
+
+/* ============================ MISE EN FORME GRID DE LA SECTION FORMATION ========================== */
+.grid-formation {
+  display: grid;
+  grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
+  grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-template-rows: minmax(min-content, max-content);
+  grid-gap: 1%;
+  column-gap: 5%;
+  margin-bottom: 3rem;
+}
+
+.grid-formation p {
+  line-height: 1.4;
+}
+
+/* MISE EN FORME GRID PARTIE OPENCLASSROOMS */
+.year1 {
+  grid-column: 2/3;
+}
+
+.oc {
+  grid-column: 3/4;
+}
+
+.cotonou {
+  grid-column: 2/3;
+}
+
+.ocsuite {
+  grid-column: 3/4;
+}
+
+/* MISE EN FORME GRID PARTIE MJM */
+.year2 {
+  grid-column: 2/3;
+}
+
+.nantes {
+  grid-column: 2/3;
+}
+
+.mjm {
+  grid-column: 3/4;
+}
+
+.mjmsuite {
+  grid-column: 3/4;
+}
+
+/* ============================= Mise en forme de la 3ème rangée ================================= */
+.columnThree {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col3-1 {
+  flex: 1 1 30%;
+  background-color: #64B5F6;
+}
+
+.col3-1 h3 {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 1rem !important;
+}
+
+.col3-2 {
+  flex: 1 1 70%;
+}
+
+.col3-2 h4 {
+  line-height: 1.5;
+}
+
+/* ============================ MISE EN FORME GRID DE LA SECTION EXP PROFESIONNELLE ========================== */
+.grid-pro {
+  display: grid;
+  grid-template-columns: [start] 1fr [left] 4fr [center] 16fr [right] 1fr [end];
+  grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-template-rows: minmax(min-content, max-content);
+  grid-gap: 1%;
+  column-gap: 5%;
+  margin-bottom: 3rem;
+}
+
+.grid-pro p {
+  line-height: 1.4;
+  margin-bottom: 1rem !important;
+}
+
+/* MISE EN FORME GRID PARTIE CANAL+ */
+.year3 {
+  grid-column: 2/3;
+}
+
+.cplus {
+  grid-column: 3/4;
+}
+
+.cotonou2 {
+  grid-column: 2/3;
+}
+
+.cplussuite {
+  grid-column: 3/4;
+}
+
+.cplussuite p {
+  margin-top: 0rem;
+}
+
+/* MISE EN FORME GRID PARTIE HOTEL DE TOIRAS */
+.year4 {
+  grid-column: 2/3;
+}
+
+.toiras {
+  grid-column: 3/4;
+}
+
+.stmartin {
+  grid-column: 2/3;
+}
+
+.toirassuite {
+  grid-column: 3/4;
+}
+
+/* ============================= Mise en forme de la 4ème rangée ================================= */
+.columnFour {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col4-1 {
+  flex: 1 1 30%;
+  background-color: #64B5F6;
+}
+
+.col4-1 h3 {
+  /* Placement des icones via la marge du bas de "Loisirs" */
+  margin-bottom: 2.7rem;
+}
+
+.kiffe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col4-2 {
+  flex: 1 1 70%;
+  text-align: center;
+}

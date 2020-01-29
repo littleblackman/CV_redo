@@ -1,0 +1,131 @@
+/* ======================================= MEDIA QUERY ====================================== */
+
+@media (min-width: 800px) {
+  .burger
+      {
+          display: none !important;
+      }
+}
+
+/* ============================= Mise en forme générale du menu burger ================================= */
+
+.burger {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    right: 1rem;
+    width: 100%;
+    z-index: 3;
+  }
+
+.menu a:link
+  {
+    color: #64B5F6;
+    text-decoration: none;
+  }
+  
+.menu a:visited
+  {
+    color: #64B5F6;
+    text-decoration: none;
+  }
+
+  .burger ul 
+    {
+    display: block;
+    position: fixed;
+    right: 0.5rem;
+    top: 3rem;
+    margin: 0 0.7rem 0 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+    font-family: "Roboto";
+  }
+
+  .burger li a {
+    display: block;
+    padding: 0px 2px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    line-height: 1.5rem;
+  }
+  
+  .menu a:hover {
+    color: purple;
+    background-color: rgb(158, 152, 152);
+  }
+  
+  .burger .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  .burger .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    margin-right: 2rem;
+  }
+  
+  .burger .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+    z-index: 2;
+  }
+  
+  .burger .menu-icon .navicon:before,
+  .burger .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .burger .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .burger .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .burger .menu-btn {
+    display: none;
+  }
+  
+  .burger .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .burger .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .burger .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .burger .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .burger .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .burger .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }

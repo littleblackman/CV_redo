@@ -1,3 +1,147 @@
+<<<<<<< Updated upstream:stylesheet.css
+=======
+/* =========================== VARIABLES ======================= */
+
+$color-main: #64B5F6;
+
+
+/* ============================ MIXINS ===================== */
+
+@mixin margin--800px {
+    margin-bottom: 1rem !important;
+}
+
+@mixin flex--800px {
+    flex: 1 1 100% !important;
+}
+
+@mixin column-left {
+    flex: 1 1 30%;
+    background-color: $color-main;
+}
+
+@mixin column-right {
+    flex: 1 1 70%;
+}
+
+/* ======================================= MEDIA QUERIES ====================================== */
+
+/* =========================== Ecrans de moins de 360px ============================ */
+
+@media (max-width: 360px) {    
+    .col1-2 h1 {
+        font-size: 1.6rem !important;
+    }
+}
+
+
+/* =========================== Ecrans de moins de 800px ============================ */
+
+@media (max-width: 800px) {    
+    .container {
+        width: 94vw !important;        
+        margin: 0rem 0.2rem !important;        
+        padding: 0.1rem 0.1rem 0rem 0.1rem !important; 
+        
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    h2 {
+        font-size: 1.6rem !important;
+    }
+    h4 {
+        text-align: center !important;     
+        margin: 1.3rem 0rem 0.7rem 0rem !important;      
+        padding: 0.3rem !important; 
+    }
+    .DP2 {
+        display: block !important;  
+        z-index: 4 !important;     
+    }
+    .col1-1 {
+        display: none !important;      
+        }
+    .col1-2 {
+            @include flex--800px;
+            text-align: center !important;
+            justify-self: center !important;
+            margin: 2rem 0rem !important;
+            }
+    .col1-2 h1 {
+            text-align: center !important;
+            margin: 0rem 0rem !important;
+            }
+    .col1-2 h2 {
+            margin: 0.5rem 0rem 1rem 0rem !important;
+            text-align: center !important;
+            }
+    .columnTwo {
+            display: flex !important;
+            flex-flow: row wrap !important;
+        }
+    .col2-1 {
+            flex: 1 1 100% !important;
+            line-height: 1.2 !important;
+            text-align: center !important;
+            justify-self: center !important;
+            @include margin--800px;
+            }
+    .col2-1 h3 {
+        @include margin--800px;
+        }       
+    .col2-2 {
+            @include flex--800px;
+            @include margin--800px;
+        }
+    .grid-formation{
+            grid-template-columns: auto !important;
+            @include margin--800px;
+        }
+    .columnThree {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    .col3-1 {
+            @include flex--800px();
+            @include margin--800px();
+        }
+    .col3-1 h3 {
+            @include margin--800px();
+        }
+    .col3-2 {
+            @include flex--800px();
+            @include margin--800px();
+        }
+    .grid-pro{
+            grid-template-columns: auto !important;
+            @include margin--800px();
+        }
+    .col4-1 {
+            @include flex--800px();
+            @include margin--800px();
+        }
+    .col4-1 h3 {
+            margin-bottom: 0.5rem !important;
+        }
+    .kiffe {
+            transform: scale(0.7) !important;
+        }
+    .col4-2 {
+            @include flex--800px();
+        }
+    article p {
+        margin: 1rem 1rem 1rem 1rem !important;
+    }
+    /* @media (max-width: 800px) {
+    .btn {
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+} */
+}  
+
+>>>>>>> Stashed changes:Sass/stylesheet.scss
 /* ============================= Mise en forme générale de la page ================================= */
 body
     {
@@ -16,12 +160,21 @@ body
         width: 90%;     
     }
 
+<<<<<<< Updated upstream:stylesheet.css
     @media (max-width: 600px) {     /* Modification quand l'écran fait 600 pixels ou moins de large pour le .container */
         .container {
             width: 94vw;        
             margin: 0% 2% 0% 2%;        
             padding: 0.5% 0.5% 0% 0.5%;         
         }
+=======
+/*
+
+.btn
+    {
+        background-color: $color-main;
+        align-self: flex-end;
+>>>>>>> Stashed changes:Sass/stylesheet.scss
     }
 
 
@@ -32,7 +185,7 @@ h1      /* Modification des titres h1 */
 
 h3      /* Modification des titres h3 */
     {
-        color: #64B5F6;     
+        color: $color-main;     
         font-size: 1.5rem;      
         background-color: black;        
         text-align: center;     
@@ -46,7 +199,7 @@ h3      /* Modification des titres h3 */
 
 .develo     /* <span> qui entoure "DEVELO" */
     {
-        border-bottom: 1px solid #64B5F6;       
+        border-bottom: 1px solid $color-main;       
     }
 
 h4      /* Modification des titres h4 */
@@ -55,6 +208,7 @@ h4      /* Modification des titres h4 */
         text-align: left;       
         font-weight: bold;      
         font-size: 1.3rem;      
+<<<<<<< Updated upstream:stylesheet.css
         border-bottom: 2px solid #64B5F6;       
         padding-bottom: 1%;      
         margin-left: 10%;       
@@ -69,10 +223,37 @@ h4      /* Modification des titres h4 */
         }
     }
 .fa-star        /* Modification de l'icone étoile */
-    {   
-        color: #64B5F6;     
+=======
+        border-bottom: 2px solid $color-main;       
+        padding-bottom: 0.35rem;      
+        margin-left: 3rem;       
+        margin-top: 0rem;    
     }
 
+.fa-star          /* Modification de l'icone étoile */
+>>>>>>> Stashed changes:Sass/stylesheet.scss
+    {   
+        color: $color-main;     
+    }
+
+<<<<<<< Updated upstream:stylesheet.css
+=======
+.fa-book-reader
+    {
+        @extend .fa-star;
+    }
+
+.fa-thumbs-up
+    {
+        @extend .fa-star;
+    }
+
+.fa-building
+    {
+        @extend .fa-star;
+    }
+
+>>>>>>> Stashed changes:Sass/stylesheet.scss
 .DP2 {      /* Modification de l'image secondaire */
     display: none;      
     border-radius: 100%;        
@@ -104,8 +285,7 @@ h4      /* Modification des titres h4 */
 .col1-1     /* Modification du bloc contenant la photo */
     {
         display: flex;      
-        background-color: #64B5F6;      
-        flex: 1 1 30%;      
+        @include column-left;      
     }
 
     @media (max-width: 600px) {     /* Modification de .col1-1 quand l'écran fait 600px ou moins */
@@ -116,7 +296,7 @@ h4      /* Modification des titres h4 */
 
 .col1-2     /* Modification du bloc Nom et Titre */
     {
-        flex: 1 1 70%;
+        @include column-right;
         text-align: left;
     }
 
@@ -197,8 +377,7 @@ h4      /* Modification des titres h4 */
 
 .col2-1     /* Mise en forme largeur + couleur de fond partie Contact */
     {
-        background-color: #64B5F6;
-        flex: 1 1 30%;
+        @include column-left;
     }
 
     @media (max-width: 600px) {      /* Modification de .col2-1 quand l'écran fait 600px ou moins */
@@ -231,7 +410,7 @@ h4      /* Modification des titres h4 */
 
 .col2-2     /* Mise en forme largeur */
     {
-        flex: 1 1 70%;
+        @include column-right;
     }
     
     @media (max-width: 600px) {     /* Modification de .col2-2 quand l'écran fait moins de 600px */
@@ -324,8 +503,7 @@ h4      /* Modification des titres h4 */
 
 .col3-1     /* Mise en forme largeur et bgColor partie A Propos de moi */
     {
-        background-color: #64B5F6;
-        flex: 1 1 30%;
+        @include column-left;
     }
 
     @media (max-width: 600px) {     /* Modification de la partie A Propos de moi quand l'écran fait moins de 600px */
@@ -355,12 +533,16 @@ h4      /* Modification des titres h4 */
 .icon       /* Placement des icones HTML5 / CSS3 */
     {
         text-align: center;
+<<<<<<< Updated upstream:stylesheet.css
         margin-bottom: 1%;
+=======
+        @include margin--800px();
+>>>>>>> Stashed changes:Sass/stylesheet.scss
     }
 
 .col3-2     /* Mise en forme largeur partie Experience Profesionnelle */
     {
-        flex: 1 1 70%;
+        @include column-right;
     }
 
     @media (max-width: 600px) {     /* MAJ partie Experience Professionnelle quand l'écran fait moins de 600px */
@@ -396,6 +578,10 @@ h4      /* Modification des titres h4 */
 
     .grid-pro p {
         line-height: 1.4;
+<<<<<<< Updated upstream:stylesheet.css
+=======
+        @include margin--800px();
+>>>>>>> Stashed changes:Sass/stylesheet.scss
     }
 
 
@@ -459,8 +645,7 @@ h4      /* Modification des titres h4 */
 
 .col4-1     /* Mise en forme largeur et bgColor de la partie Loisirs */
     {
-        background-color: #64B5F6;
-        flex: 1 1 30%;
+        @include column-left;
     }
 
     @media (max-width: 600px) {     /* Mise en forme partie Loisirs quand l'écran fait moins de 600px */
@@ -519,7 +704,7 @@ h4      /* Modification des titres h4 */
 
 .col4-2     /* Mise en forme largeur de la partie Recommandations */
     {
-        flex: 1 1 70%;
+        @include column-right;
         text-align: center;
     }
 
