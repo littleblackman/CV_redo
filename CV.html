@@ -4,41 +4,67 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta charset="utf-8" />
-         <link rel="stylesheet" href="stylesheet.css">
+         <link rel="stylesheet" href="css/stylesheet.css">
+         <link rel="stylesheet" href="css/burger.css">
+
+         <link rel="shortcut icon" type="image/jpg" href="Images/fp.png" />
+
+         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
          <script src="https://kit.fontawesome.com/c838d79e10.js" crossorigin="anonymous"></script>
-         <title>Projet 2 - Try Again</title>
+         <title>Projet 2 - CV</title>
      </head>
 
 <body>  
 
     <div class="container"> <!-- le container représente la page entière et sera le parent des 4 rangées flex qui composeront la page-->
            
-        <section class="columnOne"> <!-- 1ère rangée avec la photo, le nom et le titre -->
+        <header class="columnOne"> <!-- 1ère rangée avec la photo, le nom et le titre -->
             <article class="col1-1">
                 <img src="Images/DP.jpg" class="DP" alt="Deadpool" title="Deadpool !"/>
             </article>
-            <img src="Images/DP.jpg" class="DP2" alt="Deadpool" title="Deadpool !"/>
+            <img src="Images/DP.jpg" class="DP2" id="debut" alt="Deadpool" title="Deadpool !"/>
+
+            <div class="burger">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="#debut">Haut</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#pro">Exp Pro</a></li>
+                    <li><a href="#moi">About Me</a></li>
+                    <li><a href="#loisir">Loisirs</a></li>
+                    <li><a href="#reco">Recommandations</a></li>
+                  </ul>
+            </div>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            
+            <script src="JS/burger.js"></script>
+            
 
             <aside class="col1-2">
                 <h1><span class="paul">PAUL</span> YVES-MENAGER</h1>
                 <h2>Apprenti <span class="develo">Develo</span>ppeur Web</h2>
             </aside>
-        </section> <!-- Fin de la 1ère rangée -->
+        </header> <!-- Fin de la 1ère rangée -->
 
         <section class="columnTwo"> <!-- 2ème rangée avec les informations de contact et les formations-->
 
-            <article class="col2-1">
+            <article class="col2-1" id="contact">
                 <h3>CONTACT</h3>
                 <p>Adresse<br/>Le Bois-Plage en Ré, France</p>
                 <p>Téléphone<br/>06 80 44 56 87</p>
                 <p class="mail">Email<br/>yves-menager.paul@hotmail.com</p>
-                <p class="site">Site Web<br/>FrenchyProds.github.io</p>
+                <p class="site">Site Web<br/>FrenchyProductions.net</p>
             </article>
 
             <aside class="col2-2">
-                <h4><i class="fas fa-book-reader" style="color:#64B5F6;"></i>   FORMATION</h4>
+                <h4><i class="fas fa-book-reader"></i>   FORMATION</h4>
 
-            <div class="grid-formation">
+            <div class="grid-formation" id="formation">
             <div class="year1">
                 <p><i class="far fa-star"></i>    2020</p>
             </div>
@@ -66,7 +92,7 @@
 
         <section class="columnThree"> <!-- 3ème rangée avec les informations personnelles et les experiences pro-->
             
-            <article class="col3-1">
+            <article class="col3-1" id="moi">
                 <h3>A PROPOS DE MOI</h3>
                 <p>Né à Paris un 15 Novembre 1992, j'ai vécu la plupart de ma vie
                     à l'étranger. Passionné d'informatique et de technologie depuis
@@ -77,11 +103,11 @@
             </div>
         </article>
 
-            <aside class="col3-2">
-                <h4><i class="fas fa-building" style="color:#64B5F6;"></i>  EXPERIENCE PROFESIONNELLE</h4>
+            <aside class="col3-2" id="pro">
+                <h4><i class="fas fa-building"></i>  EXPERIENCE PROFESIONNELLE</h4>
 
             <div class="grid-pro">
-            <div class="year3"><p><i class="far fa-star"></i>  2020</p>
+            <div class="year3"><p><i class="far fa-star"></i>  2019</p>
             </div>
             <div class="cplus"><h5>CANAL+ BENIN</h5>
             </div>
@@ -108,9 +134,9 @@
         </aside>
         </section> <!-- Fin de la 3ème rangée-->
 
-        <section class="columnFour"> <!-- 4ème rangée avec les loisirs et les recommandations-->
+        <footer class="columnFour"> <!-- 4ème rangée avec les loisirs et les recommandations-->
 
-            <article class="col4-1">
+            <article class="col4-1" id="loisir">
                 <h3>LOISIRS</h3>
                 <div class="kiffe"><i class="fas fa-futbol fa-3x" title="Ceci est un ballon de foot"></i>
                 <i class="fas fa-snowboarding fa-3x" title="Pas du snowboard, du surf !"></i>
@@ -118,13 +144,13 @@
             </div>
         </article>
 
-            <aside class="col4-2">
-                <h4><i class="fas fa-thumbs-up" style="color:#64B5F6;"></i> RECOMMANDATIONS</h4>
+            <aside class="col4-2" id="reco">
+                <h4><i class="fas fa-thumbs-up"></i> RECOMMANDATIONS</h4>
                 <p>JONATHAN LETT</p>
                 <p>Directeur Général CANAL+ BENIN</p>
                 <p>Adresse Email : jonathan.lett@canal-plus.com</p>
             </aside>
-        </section>  <!-- Fin de la 4ème rangée -->
+        </footer>  <!-- Fin de la 4ème rangée -->
     </div> <!-- Fermeture du .container -->
 </body>
 </html>
